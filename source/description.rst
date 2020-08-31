@@ -24,8 +24,12 @@ the format in order to store types of data not supported by the
 
 .. seealso::
 
-    * For detailed description of the hdmf-common data format, see here:
-      http://hdmf-common-schema.readthedocs.io/en/latest/index.html
+    * The NWB specification language is used by the [Neurodata Without Borders (NWB)](https://www.nwb.org)
+      neurophysiology data standard and is based off of the
+      [Hierarchical Data Modeling Framework (HDMF)](https://github.com/hdmf-dev/hdmf)
+      [specification language](http://hdmf-schema-language.readthedocs.io/).
+    * For detailed description of the NWB data format, see here:
+      http://nwb-schema.readthedocs.io/en/latest/index.html
     * The mapping of objects described in the specification language to HDF5 is
       described in more detail in the NWB storage docs:
       http://nwb-storage.readthedocs.io/en/latest/
@@ -226,8 +230,8 @@ Schema files should have the ``groups`` key and/or the ``datasets`` key at the t
 The beginning of all schema files must begin with a comment that starts with '{{ schema_language }}' followed by a space
 and the version string of the specification language used by this namespace, e.g.,
 ``{{ schema_language }} 2.2.0``. Files without this comment are assumed to be defined
-using {{ schema_language }} 2.1.0. The comment at the beginning of schema files must be the 
-same as the comment at the start of the namespace file that includes the schema files. 
+using {{ schema_language }} 2.1.0. The comment at the beginning of schema files must be the
+same as the comment at the start of the namespace file that includes the schema files.
 
 This is the main part of the format specification. It is described in the following sections.
 

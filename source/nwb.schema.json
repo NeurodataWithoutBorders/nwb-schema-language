@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "hdmf.schema.json",
-  "title": "Schema for the HDMF language specification",
-  "description": "A schema for validating HDMF YAML files and HDMF extensions",
+  "$id": "nwb.schema.json",
+  "title": "Schema for the NWB language specification",
+  "description": "A schema for validating NWB YAML files and NWB extensions",
   "version": "2.1.0-beta",
   "type": "object",
   "additionalProperties": false,
@@ -43,7 +43,7 @@
                 "doc": {"type": "string"},
                 "source": {"type": "string"},
                 "title": {"type": "string"},
-                "data_types": {
+                "neurodata_types": {
                   "type": "array",
                   "items":  {
                     "type": "string"
@@ -162,7 +162,7 @@
       "required": ["target_type", "reftype"],
       "properties": {
         "target_type": {
-          "description": "Describes the data_type of the target that the reference points to",
+          "description": "Describes the neurodata_type of the target that the reference points to",
           "type": "string"
         },
         "reftype": {
@@ -193,16 +193,16 @@
         "required": ["doc"],
         "additionalProperties": false,
         "anyOf":[
-          {"required": ["data_type_def"]},
-          {"required": ["data_type_inc"]},
+          {"required": ["neurodata_type_def"]},
+          {"required": ["neurodata_type_inc"]},
           {"required": ["name"]}
         ],
         "properties": {
           "name": {"$ref":  "#/definitions/protectedString"},
           "default_name": {"$ref":  "#/definitions/protectedString"},
           "doc": {"type": "string"},
-          "data_type_def": {"$ref":  "#/definitions/protectedString"},
-          "data_type_inc": {"$ref":  "#/definitions/protectedString"},
+          "neurodata_type_def": {"$ref":  "#/definitions/protectedString"},
+          "neurodata_type_inc": {"$ref":  "#/definitions/protectedString"},
           "quantity": {"$ref":  "#/definitions/quantity"},
           "linkable": {"type": "boolean"},
           "datasets": {"$ref": "#/definitions/datasets"},
@@ -254,8 +254,8 @@
         "required": ["doc"],
         "additionalProperties": false,
         "anyOf":[
-          {"required": ["data_type_def"]},
-          {"required": ["data_type_inc"]},
+          {"required": ["neurodata_type_def"]},
+          {"required": ["neurodata_type_inc"]},
           {"required": ["name"]}
         ],
         "properties": {
@@ -265,8 +265,8 @@
           "dtype": {"$ref": "#/definitions/dtype"},
           "dims": {"$ref": "#/definitions/dims"},
           "shape": {"$ref": "#/definitions/shape"},
-          "data_type_def": {"$ref":  "#/definitions/protectedString"},
-          "data_type_inc": {"$ref":  "#/definitions/protectedString"},
+          "neurodata_type_def": {"$ref":  "#/definitions/protectedString"},
+          "neurodata_type_inc": {"$ref":  "#/definitions/protectedString"},
           "quantity": {"$ref":  "#/definitions/quantity"},
           "linkable": {"type": "boolean"},
           "attributes": {"$ref": "#/definitions/attributes"},

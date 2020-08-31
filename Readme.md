@@ -38,4 +38,4 @@ make clean
 ### Making a release
 
 1. Update the release notes in `source/release_notes.rst`.
-2. Update the version in `source/namespace_map.yml`, `source/hdmf.schema.json`, and `source/conf.py`
+2. Update the version in `source/namespace_map.yml`, `source/nwb.schema.json`, and `source/conf.py`
