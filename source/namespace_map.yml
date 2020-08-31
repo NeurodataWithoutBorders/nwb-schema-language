@@ -1,7 +1,7 @@
-spec_format: HDMF
-data_type_inc: data_type_inc
-data_type_def: data_type_def
-data_types: data_types
-schema_language: hdmf-schema-language
-api: hdmf
+spec_format: NWB
+data_type_inc: neurodata_type_inc
+data_type_def: neurodata_type_def
+data_types: neurodata_types
+schema_language: nwb-schema-language
+api: pynwb
 version: '2.1.0-beta'

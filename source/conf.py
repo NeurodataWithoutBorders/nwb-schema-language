@@ -50,7 +50,7 @@ master_doc = 'source/index'
 master_doc = 'index'
 
 # General information about the project.
-project = u'HDMF Specification Language'
+project = u'Neurodata Without Borders Specification Language'
 copyright = u'2020, The Regents of the University of California, through Lawrence Berkeley National Laboratory'
 
 # The version info for the project you're documenting, acts as replacement for
