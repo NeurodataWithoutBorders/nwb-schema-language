@@ -24,19 +24,19 @@ the format in order to store types of data not supported by the
 
 .. seealso::
 
-    * The NWB specification language is used by the [Neurodata Without Borders (NWB)](https://www.nwb.org)
+    * The NWB specification language is used by the `Neurodata Without Borders (NWB) <https://www.nwb.org>`_
       neurophysiology data standard and is based off of the
-      [Hierarchical Data Modeling Framework (HDMF)](https://github.com/hdmf-dev/hdmf)
-      [specification language](http://hdmf-schema-language.readthedocs.io/).
+      `Hierarchical Data Modeling Framework (HDMF) <https://github.com/hdmf-dev/hdmf>`_
+      specification language: http://hdmf-schema-language.readthedocs.io
     * For detailed description of the NWB data format, see here:
-      http://nwb-schema.readthedocs.io/en/latest/index.html
+      http://nwb-schema.readthedocs.io
     * The mapping of objects described in the specification language to HDF5 is
       described in more detail in the NWB storage docs:
-      http://nwb-storage.readthedocs.io/en/latest/
+      http://nwb-storage.readthedocs.io
     * Data structures for interacting with the specification language documents
-      (e.g., namespace and specification YAML/JSON files) are available as part of
-      {{ spec_format }}. For further details, see the {{ spec_format }} docs available here:
-      http://{{ spec_format }}.readthedocs.io/en/latest/index.html
+      (e.g., namespace and specification YAML/JSON files) are available here:
+      https://hdmf.readthedocs.io/en/stable/hdmf.spec.html and 
+      https://pynwb.readthedocs.io/en/latest/pynwb.spec.html
 
 
 .. _sec-extensions:
